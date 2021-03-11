@@ -51,9 +51,9 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to ='/words' className="nav-links">
+                        <a target = "_blank" href = 'https://medium.com/@saltellsstoriesinthedark' className="nav-links">
                                 Words
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav-btn">
                             {button ? (
