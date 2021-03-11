@@ -1,5 +1,10 @@
 .navbar {
-    background: #1c2237;
+    /*background: #254627;*/
+    background: linear-gradient(300deg, #115ec4, #d3c60a, #d6811f, #e6421e, #1dd113);
+    background-size: 300% 300%;
+    -webkit-animation: anim 25s ease infinite;
+    -moz-animation: anim 25s ease infinite;
+    animation: anim 25s ease infinite;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -9,6 +14,28 @@
     top: 0;
     z-index: 999;
   }
+
+  @keyframes anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+  @-webkit-keyframes anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
   
   .navbar-container {
     display: flex;
@@ -150,5 +177,6 @@
       width: 100%;
       height: 120px;
     }
+  
   }
   

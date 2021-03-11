@@ -11,7 +11,9 @@ function App() {
         <Route path="/" />
       </Switch>
     </Router>
+  
   );
 }
+
 
 export default App;

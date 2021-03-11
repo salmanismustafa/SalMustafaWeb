@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {MdFingerprint} from 'react-icons/md';
+import { SiAtom } from "react-icons/si";
 import {FaBars, FaTimes} from 'react-icons/fa';
 import { Button } from './Button';
 import './Navbar.css';
@@ -27,8 +28,8 @@ function Navbar() {
             <div className="navbar">
                 <div className="navbar-container container">
                     <Link to="/" className="navbar-logo">
-                        <MdFingerprint className="navbar-icon"/>
-                        Sally's Domain
+                        <SiAtom className="navbar-icon"/>
+                        Sal's Domain
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes/> : <FaBars/>}
@@ -40,13 +41,18 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to ='/things' className="nav-links">
-                                Things
+                            <a target = "_blank" href = 'https://soundcloud.com/aaxsll/' className="nav-links">
+                                Music
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <Link to ='/love' className="nav-links">
+                                Love
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to ='/stuff' className="nav-links">
-                                Stuff
+                            <Link to ='/words' className="nav-links">
+                                Words
                             </Link>
                         </li>
                         <li className="nav-btn">
