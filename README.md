@@ -1,2 +1,0 @@
-# SalMustafaWeb
-A personal site
